@@ -142,4 +142,6 @@ export class Tab1Page implements OnInit {
   }
 }
 ```
+## Forked lib from Sandrios
 
+#### [Sandrios](https://github.com/sandrios/sandriosCamera)
