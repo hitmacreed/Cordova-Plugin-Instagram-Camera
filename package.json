@@ -1,0 +1,37 @@
+{
+    "name": "InstagramCamera",
+    "version": "0.0.1",
+    "description": "Plugin for Camera like Instagram",
+    "cordova": {
+      "id": "cordova-plugin-instagram-camera",
+      "platforms": [
+        "android"
+      ]
+    },
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/hitmacreed/Cordova-Plugin-Instagram-Camera"
+    },
+    "keywords": [
+      "plugin", 
+      "Instagram",
+      "Camera",
+      "cordova-plugin",
+      "Ionic 4",
+      "Ionic 5",
+      "Ionic 3",
+      "Cordova",
+    ],
+    "engines": [
+      {
+        "name": "cordova",
+        "version": ">=8.0.0"
+      }
+    ],
+    "author": "Kevin Dias <kevindiasdeda@hotmail.com>",
+    "license": "MIT",
+    "bugs": {
+      "url": "https://github.com/hitmacreed/Cordova-Plugin-Instagram-Camera/issues"
+    },
+    "homepage": "https://github.com/hitmacreed/Cordova-Plugin-Instagram-Camera.git"
+  }

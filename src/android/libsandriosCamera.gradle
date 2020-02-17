@@ -1,0 +1,19 @@
+repositories {
+    jcenter()
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'com.sandrios.android:sandriosCamera:1.2.6'  
+}
+
+
+android {
+  packagingOptions {
+    exclude 'META-INF/NOTICE'
+    exclude 'META-INF/LICENSE'
+  }
+   defaultConfig {
+        multiDexEnabled true
+    }
+}

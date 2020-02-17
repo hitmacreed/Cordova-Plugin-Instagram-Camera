@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='utf-8'?>
+<plugin id="cordova-plugin-instagram-camera" version="0.0.1" xmlns="http://apache.org/cordova/ns/plugins/1.0"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+  <name>InstaCamera</name>
+
+  <js-module name="InstaCameraReader" src="www/InstaCameraReader.js">
+    <clobbers target="InstaCameraReader" />
+  </js-module>
+
+  <platform name="android">
+
+    <framework src="src/android/libsandriosCamera.gradle" custom="true" type="gradleReference" />
+
+    <config-file parent="/*" target="res/xml/config.xml">
+      <feature name="InstaCameraReader">
+        <param name="android-package" value="com.hitmacreed.plugin.instagramcamera.Main" />
+      </feature>
+    </config-file>
+
+    <config-file target="AndroidManifest.xml" parent="/manifest">
+      <uses-permission android:name="android.permission.CAMERA" />
+      <uses-permission android:name="android.permission.FLASHLIGHT" />
+      <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+       <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+      <uses-permission android:name="android.permission.RECORD_VIDEO" />
+      <uses-feature android:name="android.hardware.camera" />
+      <uses-feature android:name="android.hardware.camera.autofocus" android:required="false" />
+      <uses-feature android:name="android.hardware.camera.flash" android:required="false" />
+    </config-file>
+
+    <source-file src="src/android/Main.java" target-dir="src/com/hitmacreed/plugin/instagramcamera" />
+
+  </platform>
+
+</plugin>
